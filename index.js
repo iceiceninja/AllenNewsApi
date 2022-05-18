@@ -43,7 +43,7 @@ newspapers.forEach(newspaper =>{
                 })
 
             })
-        })
+        }).catch(err => console.log(newspaper.name + err))
 })
 
 app.get('/', (req,res) =>{
